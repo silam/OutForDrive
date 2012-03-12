@@ -1105,7 +1105,7 @@ void display()
 			
 			viewpoint = RotateY(turnEyeAngle) * viewpointcam;
 
-			view = viewpointcam + viewpoint;
+			view = viewpoint;
 			
 		}
 		else
