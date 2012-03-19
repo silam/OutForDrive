@@ -14,6 +14,7 @@
     <ProjectGuid>{5D098951-3CF6-4317-8D6C-B271EC108207}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>OutForDrive</RootNamespace>
+    <ProjectName>USTNoire</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -76,7 +77,7 @@
   <ItemGroup>
     <ClCompile Include="InitShader.cpp" />
     <ClCompile Include="matrix_stack.cpp" />
-    <ClCompile Include="OutForDrive.cpp" />
+    <ClCompile Include="USTNoire.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="matrix_stack.h" />
