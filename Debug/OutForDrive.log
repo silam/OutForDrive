@@ -1,173 +1,172 @@
-﻿Build started 3/11/2012 8:02:54 PM.
-     1>Project "C:\Users\silamhome\documents\visual studio 2010\Projects\Assignment2\OutForDrive\OutForDrive.vcxproj" on node 2 (build target(s)).
-     1>InitializeBuildStatus:
-         Creating "Debug\OutForDrive.unsuccessfulbuild" because "AlwaysCreate" was specified.
-       ClCompile:
-         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt OutForDrive.cpp
-         OutForDrive.cpp
-     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\gl\angel.h(63): warning C4305: 'initializing' : truncation from 'double' to 'const GLfloat'
-     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\gl\mat.h(698): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
-     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\gl\mat.h(699): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
-     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\gl\mat.h(700): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
-     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\gl\mat.h(721): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
-     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\gl\mat.h(723): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
-     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\gl\mat.h(726): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
-     1>c:\program files (x86)\microsoft visual studio 10.0\vc\include\gl\mat.h(743): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(146): warning C4305: 'initializing' : truncation from 'double' to 'GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(262): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(262): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(265): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(265): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(311): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(311): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(312): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(312): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(314): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(314): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(315): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(315): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(328): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(328): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(331): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(331): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(606): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(606): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(610): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(610): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(610): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(627): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(627): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(631): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(631): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(631): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(647): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(647): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(651): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(651): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(651): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(666): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(666): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(670): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(670): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(670): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(693): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(693): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(693): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(707): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(707): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(707): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(709): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(709): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(709): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(720): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(720): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(720): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(722): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(722): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(734): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(734): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(734): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(736): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(736): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(736): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(754): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(754): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(773): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(775): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(784): warning C4305: 'initializing' : truncation from 'double' to 'float'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(785): warning C4305: 'initializing' : truncation from 'double' to 'float'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(850): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(852): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(860): warning C4305: 'initializing' : truncation from 'double' to 'float'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(861): warning C4305: 'initializing' : truncation from 'double' to 'float'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(946): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(946): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(950): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(950): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(950): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(967): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(967): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(969): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(969): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(969): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(982): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(982): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(984): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(984): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(984): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(1003): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(1003): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(1005): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(1005): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(1005): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(1018): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(1018): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(1020): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(1020): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(1020): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(1039): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(1039): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(1041): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(1041): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(1041): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(1058): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(1058): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(1060): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(1060): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(1060): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(1094): warning C4305: 'argument' : truncation from 'double' to 'GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(1095): warning C4305: 'argument' : truncation from 'double' to 'GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(1117): warning C4305: 'argument' : truncation from 'double' to 'GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(1118): warning C4305: 'argument' : truncation from 'double' to 'GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(1150): warning C4805: '==' : unsafe mix of type 'GLboolean' and type 'bool' in operation
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(1161): warning C4244: 'argument' : conversion from 'double' to 'const GLfloat', possible loss of data
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(1162): warning C4244: 'argument' : conversion from 'double' to 'const GLfloat', possible loss of data
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(1165): warning C4805: '==' : unsafe mix of type 'GLboolean' and type 'bool' in operation
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(1179): warning C4805: '==' : unsafe mix of type 'GLboolean' and type 'bool' in operation
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(1184): warning C4244: '-=' : conversion from 'double' to 'GLfloat', possible loss of data
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(1188): warning C4244: '+=' : conversion from 'double' to 'GLfloat', possible loss of data
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(1192): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(1193): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(1219): warning C4244: '+=' : conversion from 'double' to 'GLfloat', possible loss of data
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(1225): warning C4244: '+=' : conversion from 'double' to 'GLfloat', possible loss of data
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(1229): warning C4244: '-=' : conversion from 'double' to 'GLfloat', possible loss of data
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(1232): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(1233): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(1256): warning C4244: '-=' : conversion from 'double' to 'GLfloat', possible loss of data
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(1317): warning C4805: '==' : unsafe mix of type 'GLboolean' and type 'bool' in operation
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(1444): warning C4305: 'argument' : truncation from 'double' to 'GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(1445): warning C4305: 'argument' : truncation from 'double' to 'GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(1446): warning C4305: 'argument' : truncation from 'double' to 'GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(1459): warning C4305: '=' : truncation from 'double' to 'GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(1489): warning C4305: '=' : truncation from 'double' to 'GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(1490): warning C4305: '=' : truncation from 'double' to 'GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(1493): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(1519): warning C4305: '=' : truncation from 'double' to 'GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(1523): warning C4305: '=' : truncation from 'double' to 'GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(1528): warning C4305: '=' : truncation from 'double' to 'GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(1532): warning C4305: '=' : truncation from 'double' to 'GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(1541): warning C4305: '=' : truncation from 'double' to 'GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(1545): warning C4305: '=' : truncation from 'double' to 'GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(1550): warning C4305: '=' : truncation from 'double' to 'GLfloat'
-     1>c:\users\silamhome\documents\visual studio 2010\projects\assignment2\outfordrive\outfordrive.cpp(1554): warning C4305: '=' : truncation from 'double' to 'GLfloat'
-       ManifestResourceCompile:
-         All outputs are up-to-date.
-       Link:
-         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\silamhome\documents\visual studio 2010\Projects\Assignment2\Debug\OutForDrive.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\OutForDrive.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\silamhome\documents\visual studio 2010\Projects\Assignment2\Debug\OutForDrive.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\silamhome\documents\visual studio 2010\Projects\Assignment2\Debug\OutForDrive.lib" /MACHINE:X86 Debug\OutForDrive.exe.embed.manifest.res
-         Debug\InitShader.obj
-         Debug\matrix_stack.obj
-         Debug\OutForDrive.obj
-       Manifest:
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\OutForDrive.exe.embed.manifest" /manifest Debug\OutForDrive.exe.intermediate.manifest
-         All outputs are up-to-date.
-       LinkEmbedManifest:
-         All outputs are up-to-date.
-         OutForDrive.vcxproj -> C:\Users\silamhome\documents\visual studio 2010\Projects\Assignment2\Debug\OutForDrive.exe
-       FinalizeBuildStatus:
-         Deleting file "Debug\OutForDrive.unsuccessfulbuild".
-         Touching "Debug\OutForDrive.lastbuildstate".
-     1>Done Building Project "C:\Users\silamhome\documents\visual studio 2010\Projects\Assignment2\OutForDrive\OutForDrive.vcxproj" (build target(s)).
-
-Build succeeded.
-
-Time Elapsed 00:00:01.49
+﻿  USTNoire.cpp
+c:\program files (x86)\microsoft visual studio 10.0\vc\include\gl\angel.h(63): warning C4305: 'initializing' : truncation from 'double' to 'const GLfloat'
+c:\program files (x86)\microsoft visual studio 10.0\vc\include\gl\mat.h(698): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+c:\program files (x86)\microsoft visual studio 10.0\vc\include\gl\mat.h(699): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+c:\program files (x86)\microsoft visual studio 10.0\vc\include\gl\mat.h(700): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+c:\program files (x86)\microsoft visual studio 10.0\vc\include\gl\mat.h(721): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+c:\program files (x86)\microsoft visual studio 10.0\vc\include\gl\mat.h(723): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+c:\program files (x86)\microsoft visual studio 10.0\vc\include\gl\mat.h(726): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+c:\program files (x86)\microsoft visual studio 10.0\vc\include\gl\mat.h(743): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(208): warning C4305: 'initializing' : truncation from 'double' to 'GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(324): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(324): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(327): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(327): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(347): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(347): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(350): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(350): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(394): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(394): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(395): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(395): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(397): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(397): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(398): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(398): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(416): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(416): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(419): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(419): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1014): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1014): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1018): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1018): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1018): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1043): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1043): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1047): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1047): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1047): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1063): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1063): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1067): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1067): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1067): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1082): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1082): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1086): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1086): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1086): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1102): warning C4305: 'argument' : truncation from 'double' to 'GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1102): warning C4305: 'argument' : truncation from 'double' to 'GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1102): warning C4305: 'argument' : truncation from 'double' to 'GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1103): warning C4305: 'argument' : truncation from 'double' to 'GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1103): warning C4305: 'argument' : truncation from 'double' to 'GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1103): warning C4305: 'argument' : truncation from 'double' to 'GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1114): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1114): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1114): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1128): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1128): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1128): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1130): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1130): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1130): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1141): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1141): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1141): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1143): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1143): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1155): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1155): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1155): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1157): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1157): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1157): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1175): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1175): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1204): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1206): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1215): warning C4305: 'initializing' : truncation from 'double' to 'float'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1216): warning C4305: 'initializing' : truncation from 'double' to 'float'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1281): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1283): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1291): warning C4305: 'initializing' : truncation from 'double' to 'float'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1292): warning C4305: 'initializing' : truncation from 'double' to 'float'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1377): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1377): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1381): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1381): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1381): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1398): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1398): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1400): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1400): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1400): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1413): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1413): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1415): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1415): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1415): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1434): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1434): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1434): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1436): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1436): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1436): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1454): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1454): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1454): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1456): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1456): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1456): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1475): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1475): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1477): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1477): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1477): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1490): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1490): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1492): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1492): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1492): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1511): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1511): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1513): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1513): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1513): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1530): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1530): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1532): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1532): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1532): warning C4305: 'argument' : truncation from 'double' to 'const GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1568): warning C4305: 'argument' : truncation from 'double' to 'GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1569): warning C4305: 'argument' : truncation from 'double' to 'GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1591): warning C4305: 'argument' : truncation from 'double' to 'GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1592): warning C4305: 'argument' : truncation from 'double' to 'GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1596): warning C4305: 'argument' : truncation from 'double' to 'GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1596): warning C4305: 'argument' : truncation from 'double' to 'GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1596): warning C4305: 'argument' : truncation from 'double' to 'GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1631): warning C4805: '==' : unsafe mix of type 'GLboolean' and type 'bool' in operation
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1642): warning C4244: 'argument' : conversion from 'double' to 'const GLfloat', possible loss of data
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1643): warning C4244: 'argument' : conversion from 'double' to 'const GLfloat', possible loss of data
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1646): warning C4805: '==' : unsafe mix of type 'GLboolean' and type 'bool' in operation
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1660): warning C4805: '==' : unsafe mix of type 'GLboolean' and type 'bool' in operation
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1665): warning C4244: '-=' : conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1669): warning C4244: '+=' : conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1673): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1674): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1700): warning C4244: '+=' : conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1706): warning C4244: '+=' : conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1710): warning C4244: '-=' : conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1713): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1714): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1737): warning C4244: '-=' : conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1798): warning C4805: '==' : unsafe mix of type 'GLboolean' and type 'bool' in operation
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1925): warning C4305: 'argument' : truncation from 'double' to 'GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1926): warning C4305: 'argument' : truncation from 'double' to 'GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1927): warning C4305: 'argument' : truncation from 'double' to 'GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1940): warning C4305: '=' : truncation from 'double' to 'GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1979): warning C4305: '=' : truncation from 'double' to 'GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1980): warning C4305: '=' : truncation from 'double' to 'GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(1983): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(2009): warning C4305: '=' : truncation from 'double' to 'GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(2013): warning C4305: '=' : truncation from 'double' to 'GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(2018): warning C4305: '=' : truncation from 'double' to 'GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(2022): warning C4305: '=' : truncation from 'double' to 'GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(2031): warning C4305: '=' : truncation from 'double' to 'GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(2035): warning C4305: '=' : truncation from 'double' to 'GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(2040): warning C4305: '=' : truncation from 'double' to 'GLfloat'
+c:\users\mspprod\documents\visual studio 2010\projects\ustnoire\ustnoire.cpp(2044): warning C4305: '=' : truncation from 'double' to 'GLfloat'
+  OutForDrive.vcxproj -> C:\Users\mspprod\Documents\Visual Studio 2010\Projects\USTNoire\Debug\USTNoire.exe

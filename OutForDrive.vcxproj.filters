@@ -33,5 +33,7 @@
   <ItemGroup>
     <None Include="fshader-transform.glsl" />
     <None Include="vshader-transform.glsl" />
+    <None Include="spotlight-fshader-transform.glsl" />
+    <None Include="spotlight-vshader-transform.glsl" />
   </ItemGroup>
 </Project>

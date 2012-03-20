@@ -44,6 +44,17 @@ GLuint vWheelCylinderAmbientDiffuseColor; //Ambient and Diffuse can be the same 
 GLuint vWheelCylinderSpecularColor;
 GLuint vWheelCylinderSpecularExponent;
 
+// stage
+GLuint vStageAmbientDiffuseColor; //Ambient and Diffuse can be the same for the material
+GLuint vStageSpecularColor;
+GLuint vStageSpecularExponent;
+
+
+// head lamps
+GLuint vHeadLampsAmbientDiffuseColor; //Ambient and Diffuse can be the same for the material
+GLuint vHeadLampsSpecularColor;
+GLuint vHeadLampsSpecularExponent;
+
 //Some light properties
 GLuint light_position;
 GLuint light_color;
@@ -105,11 +116,16 @@ GLuint vPosition;
 GLuint vColor;
 GLuint program;
 
+
+GLuint spotprogram;
+
 /////////////////////////
 // stage vertices
 /////////////////////////
 vec4 stageVerts[6];
 vec4 stageColors[6];
+vec4 stageNormals[6];
+
 GLuint stagevao[1];
 GLuint stagevbo[2];
 
@@ -152,6 +168,14 @@ vec4 wheelCylinderColors[500];
 
 GLuint cylindervao[1];
 GLuint cylindervbo[2];
+
+/////////////////////////
+// head Lamps
+/////////////////////////
+vec4 lampsVerts[144];
+vec4 lampsColors[144];
+GLuint lampsvao[1];
+GLuint lampsvbo[2];
 
 /////////////////////////
 // eye
@@ -306,31 +330,52 @@ void generateEyes()
 	}
 }
 
-/*
-GLuint generateVertexArrayBufferData(GLuint vao[1], GLuint vbo[2], vec4 verts[], vec4 colors[])
+/////////////////////////////////////////
+//generateEyes
+/////////////////////////////////////////
+void generateHeadLamps()
 {
-	glGenVertexArrays( 1, &vao[0] );
+		
+	int point = 0;
+	double angleincrement = 15;
+	for ( double angle = 0; angle <= 360; angle += angleincrement)
+	{
+		lampsColors[point] = vec4(1.0f, 1.0f, 1.0f, 1.0);
+		lampsVerts[point++] = vec4(0.0f,	0.0f, 0.0f, 1.0); //point 1
+		
+		lampsColors[point] = vec4(1.0f, 1.0f, 1.0f, 1.0);
+		lampsVerts[point++] = vec4(cos(angle*M_PI/180), 0.0f, -sin(angle*M_PI/180), 1.0); //point 2
+		
+		lampsColors[point] = vec4(1.0f, 1.0f, 1.0f, 1.0);
+		lampsVerts[point++] = vec4(cos((angle+angleincrement)*M_PI/180), 0.0f, -sin((angle+angleincrement)*M_PI/180), 1.0); //point 3
+		
+
+	}
+
+	///////////////////////////////
+	// EYES
+	///////////////////////////////
+	glGenVertexArrays( 1, &lampsvao[0] );
 	// Create and initialize any buffer objects
-	glBindVertexArray( vao[0] );
+	glBindVertexArray( lampsvao[0] );
 	
-	glGenBuffers( 2, &vbo[0] );
-    glBindBuffer( GL_ARRAY_BUFFER, vbo[0] );
+	glGenBuffers( 2, &lampsvbo[0] );
+    glBindBuffer( GL_ARRAY_BUFFER, lampsvbo[0] );
     
-	glBufferData( GL_ARRAY_BUFFER, sizeof(verts), verts, GL_STATIC_DRAW);
+	glBufferData( GL_ARRAY_BUFFER, sizeof(lampsVerts), lampsVerts, GL_STATIC_DRAW);
 	vPosition = glGetAttribLocation(program, "vPosition");
 	glEnableVertexAttribArray(vPosition);
 	glVertexAttribPointer(vPosition, 4, GL_FLOAT, GL_FALSE, 0, 0);
 
 	//and now our colors for each vertex
-	glBindBuffer( GL_ARRAY_BUFFER, vbo[1] );
-	glBufferData( GL_ARRAY_BUFFER, sizeof(colors), colors, GL_STATIC_DRAW );
+	glBindBuffer( GL_ARRAY_BUFFER,lampsvbo[1] );
+	glBufferData( GL_ARRAY_BUFFER, sizeof(lampsColors), lampsColors, GL_STATIC_DRAW );
 	vColor = glGetAttribLocation(program, "vColor");
 	glEnableVertexAttribArray(vColor);
 	glVertexAttribPointer(vColor, 4, GL_FLOAT, GL_FALSE, 0, 0);
-
-	return vao[0];
 }
-*/
+
+
 
 /////////////////////////////////////////
 // generateWheelSides
@@ -423,6 +468,9 @@ void generateWheelSides()
 	// wheel sides
 	///////////////////////////////////
 
+	model_view = glGetUniformLocation(program, "model_view");
+	projection = glGetUniformLocation(program, "projection");
+
 	vWheelSide1AmbientDiffuseColor = glGetAttribLocation(program, "vAmbientDiffuseColor");
 	vWheelSide1SpecularColor = glGetAttribLocation(program, "vSpecularColor");
 	vWheelSide1SpecularExponent = glGetAttribLocation(program, "vSpecularExponent");
@@ -435,14 +483,28 @@ void generateWheelSides()
 	glGenBuffers( 2, &wheelside1vbo[0] );
     glBindBuffer( GL_ARRAY_BUFFER, wheelside1vbo[0] );
     
-	glBufferData( GL_ARRAY_BUFFER, sizeof(wheelSide1Verts) + sizeof(wheelSide1Normals), NULL, GL_STATIC_DRAW);
-	glBufferSubData( GL_ARRAY_BUFFER, 0, sizeof(wheelSide1Verts), wheelSide1Verts);
-	glBufferSubData( GL_ARRAY_BUFFER, sizeof(wheelSide1Verts), sizeof(wheelSide1Normals), wheelSide1Normals);
+	glBufferData( GL_ARRAY_BUFFER, sizeof(wheelSide1Verts), wheelSide1Verts, GL_STATIC_DRAW);
 
+	 glBindBuffer( GL_ARRAY_BUFFER, wheelside1vbo[1] );
+	glBufferData( GL_ARRAY_BUFFER, sizeof(wheelSide1Normals), wheelSide1Normals, GL_STATIC_DRAW);
+
+	
+	//glBufferSubData( GL_ARRAY_BUFFER, 0, sizeof(wheelSide1Verts), wheelSide1Verts);
+	//glBufferSubData( GL_ARRAY_BUFFER, sizeof(wheelSide1Verts), sizeof(wheelSide1Normals), wheelSide1Normals);
+
+
+	//glBufferData( GL_ARRAY_BUFFER, sizeof(wheelSide1Verts) + sizeof(wheelSide1Normals), NULL, GL_STATIC_DRAW);
+	// update parts of buffer objects with new data
+	//glBufferSubData( GL_ARRAY_BUFFER, 0, sizeof(wheelSide1Verts), wheelSide1Verts);
+	//glBufferSubData( GL_ARRAY_BUFFER, sizeof(wheelSide1Verts), sizeof(wheelSide1Normals), wheelSide1Normals);
+
+	glBindBuffer( GL_ARRAY_BUFFER, wheelside1vbo[0] );
 
 	vPosition = glGetAttribLocation(program, "vPosition");
 	glEnableVertexAttribArray(vPosition);
 	glVertexAttribPointer(vPosition, 4, GL_FLOAT, GL_FALSE, 0, BUFFER_OFFSET(0));
+
+	glBindBuffer( GL_ARRAY_BUFFER, wheelside1vbo[1] );
 
 	GLuint vNormal = glGetAttribLocation(program, "vNormal");
 	glEnableVertexAttribArray(vNormal);
@@ -562,8 +624,7 @@ void generateWheelSides()
 	glBufferData( GL_ARRAY_BUFFER, sizeof(wheelCylinderVers) + sizeof(vWheelCylinderNormals), NULL, GL_STATIC_DRAW);
 	glBufferSubData( GL_ARRAY_BUFFER, 0, sizeof(wheelCylinderVers), wheelCylinderVers);
 	glBufferSubData( GL_ARRAY_BUFFER, sizeof(wheelCylinderVers), sizeof(vWheelCylinderNormals), vWheelCylinderNormals);
-
-
+	
 
 	vPosition = glGetAttribLocation(program, "vPosition");
 	glEnableVertexAttribArray(vPosition);
@@ -585,17 +646,34 @@ void generateStage(){
 	for(int i=0; i<6; i++){
 		stageColors[i] = vec4(0.0, 1.0, 0.0, 1.0); //bottom
 	}
-	stageVerts[0] = vec4(1.0f, -1.0f, -1.0f, 1.0);
-	stageVerts[1] = vec4(1.0f, -1.0f, 1.0f, 1.0);
-	stageVerts[2] = vec4(-1.0f, -1.0f, 1.0f, 1.0);
-	stageVerts[3] = vec4(-1.0f, -1.0f, 1.0f, 1.0);
-	stageVerts[4] = vec4(-1.0f, -1.0f, -1.0f, 1.0);
-	stageVerts[5] = vec4(1.0f, -1.0f, -1.0f, 1.0);
+	point4 a = stageVerts[0] = vec4(1.0f, -1.0f, -1.0f, 1.0);
+	point4 b = stageVerts[1] = vec4(1.0f, -1.0f, 1.0f, 1.0);
+	point4 c = stageVerts[2] = vec4(-1.0f, -1.0f, 1.0f, 1.0);
+
+	vec3 normals = normalize(cross(a-b,c-b));
+	stageNormals[0] = normals;
+	stageNormals[1] = normals;
+	stageNormals[2] = normals;
+
+
+	a = stageVerts[3] = vec4(-1.0f, -1.0f, 1.0f, 1.0);
+	b = stageVerts[4] = vec4(-1.0f, -1.0f, -1.0f, 1.0);
+	c = stageVerts[5] = vec4(1.0f, -1.0f, -1.0f, 1.0);
+
+	normals = normalize(cross(a-b,c-b));
+	stageNormals[3] = normals;
+	stageNormals[5] = normals;
+	stageNormals[5] = normals;
 
 
 	/////////////////////////////////
 	// stage
 	/////////////////////////////////
+
+	vStageAmbientDiffuseColor = glGetAttribLocation(program, "vAmbientDiffuseColor");
+	vStageSpecularColor = glGetAttribLocation(program, "vSpecularColor");
+	vStageSpecularExponent = glGetAttribLocation(program, "vSpecularExponent");
+
 	// Create a vertex array object
     glGenVertexArrays( 1, &stagevao[0] );
 
@@ -603,7 +681,14 @@ void generateStage(){
 	glBindVertexArray( stagevao[0] );
 	glGenBuffers( 2, &stagevbo[0] );
     glBindBuffer( GL_ARRAY_BUFFER, stagevbo[0] );
-    glBufferData( GL_ARRAY_BUFFER, sizeof(stageVerts), stageVerts, GL_STATIC_DRAW);
+
+
+	glBufferData( GL_ARRAY_BUFFER, sizeof(stageVerts) + sizeof(stageNormals), NULL, GL_STATIC_DRAW);
+	glBufferSubData( GL_ARRAY_BUFFER, 0, sizeof(stageVerts), stageVerts);
+	glBufferSubData( GL_ARRAY_BUFFER, sizeof(stageVerts), sizeof(stageNormals), stageNormals);
+
+    //glBufferData( GL_ARRAY_BUFFER, sizeof(stageVerts), stageVerts, GL_STATIC_DRAW);
+
 	vPosition = glGetAttribLocation(program, "vPosition");
 	glEnableVertexAttribArray(vPosition);
 	glVertexAttribPointer(vPosition, 4, GL_FLOAT, GL_FALSE, 0, 0);
@@ -1012,7 +1097,12 @@ void displayWheels()
 /////////////////////////////////////////
 void displayStage(void)
 {
+	glUniformMatrix4fv(model_view, 1, GL_TRUE, mv);
   
+	glVertexAttrib4fv(vStageAmbientDiffuseColor, vec4(0.9, .9, 0.6, 1));
+	glVertexAttrib4fv(vStageSpecularColor, vec4(0.1, 0.1, 0.1, 1));
+	glVertexAttrib1f(vStageSpecularExponent, 1);
+
 	DrawTriagle(stagevao, 36);
 	   
 }
@@ -1081,7 +1171,7 @@ void displayCar(void)
 	
 	mv = mv * Translate(currentX, 0, currentZ);
 	mv = mv * RotateY(turnCarAngle);
-	
+	 
 	mv = mv * Translate(0, -0.93, 0.0005); //0.025); // 0.05
 	//mv = mv * Scale(1.0,0.5,3);
 	mv = mv * Scale(0.5,0.25,1.5 );
@@ -1089,9 +1179,7 @@ void displayCar(void)
 	glUniformMatrix4fv(model_view, 1, GL_TRUE, mv);
 
     
-	glUniform4fv(ambient_light, 1, vec4(0.2, 0.2, 0.2, 1));
-	glUniform4fv(light_color, 1, vec4(1, 1, 1, 1));
-	glUniform4fv(light_position, 1, vec4(50,50, 50, 1)); //mv*vec4(50,50, 50, 1));
+	
 
 	glVertexAttrib4fv(vCarAmbientDiffuseColor, vec4(0, .5, 0, 1));
 	glVertexAttrib4fv(vCarSpecularColor, vec4(1, 1, 1, 1));
@@ -1333,6 +1421,47 @@ void displayChaseCamera()
 
 }
 /////////////////////////////////////////
+// displayHeadLamps
+/////////////////////////////////////////
+void displayHeadLamps()
+{
+	// left lamp
+	stack.push(mv);
+	
+	mv = mv * Translate(currentX, 0, currentZ);
+	mv = mv * RotateY(turnCarAngle);
+			
+	mv = mv * Translate(0.01, -0.93, 0.079); // 0.05
+	mv = mv * RotateX(90);
+	mv = mv * Scale(0.01,0.01,0.01);
+
+
+	//glVertexAttrib4fv(vHeadLampsAmbientDiffuseColor, vec4(1, 1, 1, 1));
+	//glVertexAttrib4fv(vWheelCylinderSpecularColor, vec4(1, 0.5, 1, 1));
+	//glVertexAttrib1f(vWheelCylinderSpecularExponent, 5);
+
+	DrawTriagle(lampsvao, 144);
+
+	mv = stack.pop();
+
+
+	// Right lamp
+	stack.push(mv);
+	
+	mv = mv * Translate(currentX, 0, currentZ);
+	mv = mv * RotateY(turnCarAngle);
+			
+	mv = mv * Translate(-0.01, -0.93, 0.079); // 0.05
+	mv = mv * RotateX(90);
+	mv = mv * Scale(0.01,0.01,0.01);
+
+	DrawTriagle(lampsvao, 144);
+
+	mv = stack.pop();
+
+}
+
+/////////////////////////////////////////
 // displayHead
 /////////////////////////////////////////
 void displayHead()
@@ -1464,7 +1593,11 @@ void display()
 				   vec4(0, 1, 0, 0.0));    // up
 	}
 	
-	
+	glUniform4fv(ambient_light, 1, vec4(0.2, 0.2, 0.2, 1));
+	glUniform4fv(light_color, 1, vec4(1, 1, 1, 1));
+	// value 1 for spotlight
+	// value 0 for distant light
+	glUniform4fv(light_position, 0, vec4(50,50, 50, 0)); //mv*vec4(50,50, 50, 1));
 	
 	displayStage();
 
@@ -1472,6 +1605,8 @@ void display()
 
 	displayWheels();
 	
+	displayHeadLamps();
+
 	displayHead();
 
 	//displayObjects();
@@ -1811,7 +1946,10 @@ void init() {
 
   // Load shaders and use the resulting shader program
     program = InitShader( "vshader-transform.glsl", "fshader-transform.glsl" );
+
     glUseProgram( program );
+
+	//spotprogram = InitShader( "spotlight-vshader-transform.glsl", "spotlight-fshader-transform.glsl" );
 
 //grab pointers for our modelview and perspecive uniform matrices
 	model_view = glGetUniformLocation(program, "model_view");
@@ -1824,6 +1962,8 @@ void init() {
 
   generateWheelSides();
   
+  generateHeadLamps();
+
   generateHead();
 
   //generateSimpleObjects();

@@ -33,5 +33,5 @@ main()
 		specular = vec4(0, 0, 0, 1);
 	}
 
-	color = ambient + diffuse + specular;
+	color = ambient + diffuse;// + specular;
 }

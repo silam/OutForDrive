@@ -1,7 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OutForDrive", "OutForDrive.vcxproj", "{5D098951-3CF6-4317-8D6C-B271EC108207}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "USTNoire", "OutForDrive.vcxproj", "{5D098951-3CF6-4317-8D6C-B271EC108207}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SpotLightgl1", "..\SpotLightgl1\SpotLightgl1.vcxproj", "{3A298C83-3895-4EAE-BA28-8FABBAADB8EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,6 +15,10 @@ Global
 		{5D098951-3CF6-4317-8D6C-B271EC108207}.Debug|Win32.Build.0 = Debug|Win32
 		{5D098951-3CF6-4317-8D6C-B271EC108207}.Release|Win32.ActiveCfg = Release|Win32
 		{5D098951-3CF6-4317-8D6C-B271EC108207}.Release|Win32.Build.0 = Release|Win32
+		{3A298C83-3895-4EAE-BA28-8FABBAADB8EE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3A298C83-3895-4EAE-BA28-8FABBAADB8EE}.Debug|Win32.Build.0 = Debug|Win32
+		{3A298C83-3895-4EAE-BA28-8FABBAADB8EE}.Release|Win32.ActiveCfg = Release|Win32
+		{3A298C83-3895-4EAE-BA28-8FABBAADB8EE}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
