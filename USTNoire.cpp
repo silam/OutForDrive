@@ -23,6 +23,7 @@ int ww=1500, wh=1100;
 
 #define M_PI 3.14159265358979323846
 
+GLuint vlight_source;
 // CAR
 GLuint vCarAmbientDiffuseColor; //Ambient and Diffuse can be the same for the material
 GLuint vCarSpecularColor;
@@ -552,6 +553,8 @@ void generateWheelSides()
 	vWheelSide2AmbientDiffuseColor = glGetAttribLocation(program, "vAmbientDiffuseColor");
 	vWheelSide2SpecularColor = glGetAttribLocation(program, "vSpecularColor");
 	vWheelSide2SpecularExponent = glGetAttribLocation(program, "vSpecularExponent");
+	vlight_source = glGetAttribLocation(program, "vlightsourcein");
+
 
 	glGenVertexArrays( 1, &wheelside2vao[0] );
 	// Create and initialize any buffer objects
@@ -974,9 +977,12 @@ void DrawWheels(GLuint wheelside1vao[1],
 				  GLuint cylindervao[1], 
 				  GLsizei sidecount, GLsizei cylindercount)
 {
+	glVertexAttrib1f(vlight_source, 0);
+
 	glVertexAttrib4fv(vWheelSide1AmbientDiffuseColor, vec4(1, .5, 0, 1));
 	glVertexAttrib4fv(vWheelSide1SpecularColor, vec4(1, 1, 1, 1));
 	glVertexAttrib1f(vWheelSide1SpecularExponent, 10);
+	
 
 	DrawTriagle(wheelside1vao, sidecount);
 
@@ -989,6 +995,7 @@ void DrawWheels(GLuint wheelside1vao[1],
 	
 	// draw cylinder
 
+	
 	glVertexAttrib4fv(vWheelCylinderAmbientDiffuseColor, vec4(0.5, .5, 0.5, 1));
 	glVertexAttrib4fv(vWheelCylinderSpecularColor, vec4(1, 0.5, 1, 1));
 	glVertexAttrib1f(vWheelCylinderSpecularExponent, 5);
